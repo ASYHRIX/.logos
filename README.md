@@ -5,128 +5,114 @@ This repository contains the core kernel for "THE LOGOS-OMEGA", an entity design
 ## 🏗️ Physical Architecture 
 
 ### Directory Structure 
-logos/
-├── native/                  # RUST SOVEREIGN ENGINE (High Perfomance Kernel)
-│   ├── physics.rs           # Real Physics (Optics, Astronomy, Thermo, RG Flow)
-│   ├── logic.rs             # DiscoveryEngine (SVD), EquityEngine (Bias), NLI
-│   ├── security.rs          # SovereignGuard (Anti-Hacking), RateLimiter, CDC
-│   ├── math.rs              # PredictionKernel (GP), MatrixKernels, EntropySuite
-│   └── vector.rs            # HNSWIndex, SovereignGraph (Motif Discovery)
+project_root/                
+├── backend_core/            # Compiled High-Performance Module (Rust) 
+│   ├── compute.rs           # Core Processing
+│   ├── logic_engine.rs      # Rules & Routing 
+│   ├── security.rs          # Auth & Rate Limiting 
+│   ├── math_utils.rs        # Calculation Kernels 
+│   └── index_utils.rs       # Search & Graph Utilities 
 │
-├── dimensions/              # 6 The 6 Pillars of Wisdom (Python Intelligent Layer)
-│   ├── __init__.py          # Unified Dimension Exports
-│   ├── world_brain.py       # Dim 1: Global Data & Policy Enforcement
-│   ├── akasha.py            # Dim 2: Eternal Vector Index & Shard Management
-│   ├── alchemist.py         # Dim 3: Concept Distillation & Causal Mapping
-│   ├── shadow_seer.py       # Dim 4: Latent Pattern Discovery & Entropy Probing
-│   ├── oracle.py            # Dim 5: Bayesian Forecasting & Priority Feedback
-│   └── gatekeeper.py        # Dim 6: Wisdom Filtering & MCDM Decision Core
+├── processing_layers/       # Scripting Logic Layer (Python)
+│   ├── __init__.py          # 
+│   ├── layer_1_ingest.py    # Data Collection & Policy 
+│   ├── layer_2_storage.py   # Indexing & Shard Management 
+│   ├── layer_3_transform.py # Data Transformation & Mapping
+│   ├── layer_4_analysis.py  # Pattern Recognition 
+│   ├── layer_5_predict.py   # Forecasting Module 
+│   └── layer_6_filter.py    # Output Filtering & Decision Logic
 │
-├── core/                    # Cognitive System & PROVENANCE
-│   ├── __init__.py
-│   ├── metacognition.py     # Self-Audit, Hallucination Suppression, Active Inference
-│   ├── system_health.py     # System Health Dashboard & Real-Time Metrics
-│   └── provenance.py        # Merkle-Tree Integrity for Knowledge Chain
+├── system_monitor/          # Diagnostics & Auditing 
+│   ├── __init__.py          # 
+│   ├── audit.py             # Internal Checks 
+│   ├── metrics.py           # Health Dashboard 
+│   └── integrity.py         # Data Validation 
 │
-├── storage/                 # DATA LAYER & STORAGE
-│   ├── lake                 # SQLite/Parquet Persistence Layer
-│   └── graph                # Integrated Trust Graph Structure
+├── database/                # Persistence Layer 
+│   ├── relational           # Standard DB Storage 
+│   └── graph                # Relationship Storage 
 │
-└── utils/                   # HELPER & Configuration Global Settings AGI-Grade Logging Suite
+└── helpers/                 # Utilities & Logging
 │
-├── __init__.py              # Package init Entry 2026
-├── lib.rs                   # Unified Bridge (PyO3 Entry Point) (Zero-Copy Bridge) 2026
-├── Cargo.toml               # Rust Build Configuration (optimization & SIMD) 2026 
-├── requirements.txt         # Python Dependency Stack 2026
-├── logos_core.py            # The Integrated Master Wisdom Orchestrator 
-└── main.py                  # CLI with Health Dashboard & Audit 2026
+├── __init__.py              #
+├── bridge.rs                # Language Interoperability Bridge 
+├── Cargo.toml               # Backend Build Config 
+├── requirements.txt         # Scripting Dependencies 
+├── orchestrator.py          # Main Pipeline Controller 
+└── cli.py                   # Command Line Interface
 
 ### Logical Knowledge Flow (The Logos-Omega Pipeline) 
 
-+===============================================+
-|            LOGOS-OMEGA KNOWLEDGE FLOW v2.0    |
-+===============================================+
++===============================================+ 
+|            STANDARD DATA PIPELINE             | 
++===============================================+ 
 
-  RAW DATA SOURCES (Real Federated Access)
-  =========================================
-  [Satellites] [APIs] [IoT] [Archives] [Sensors] [Web] [Databases]
-        |         |     |        |         |       |        |
-        +---------+-----+--------+---------+-------+--------+
-                          |
-                          v
-  +----------------------------------------------+
-  |  DIMENSION 1: WORLD BRAIN                    |
-  |  - Global Data Orchestrator                  |
-  |  - Federated HTTP Client                     |
-  |  - Semantic API Gateway                      |
-  |  - Privacy Gates (DLP/PII/NER)               |
-  |  - Policy-First Routing                      |
-  |  - Rate Limiting & Backpressure              | 
-  |  - Provenance Tracking                       |
-  |  - CDC & Real-Time Stream Handler            |
-  |  - Data Trust: Scoping & Risk Limiting       |
-  +----------------------------------------------+
-                          |
-                          v
-  +----------------------------------------------+
-  |  DIMENSION 2: AKASHA (Eternal Index)         |
-  |  - Vector Similarity Search (ANN)            |
-  |  - HNSW Vector Search (ANN)                  |
-  |  - Bitemporal Tagging & Queries              |
-  |  - Self-Evolving Schema                      |
-  |  - Ontology-Aware Indexing                   |
-  |  - Causal Anchors                            |
-  |  - Entity Resolution (Wikidata/Wikipedia)    |
-  |  - ChromaDB Persistent Vector Storage        |
-  +----------------------------------------------+
-                          |
-                          v
-          +---------------+---------------+
-          |                               |
-          v                               v
-  +-------------------+             +------------------+
-  | DIM 3: ALCHEMIST  |             | DIM 4: SHADOW    |
-  | - Concept         |             |   SEER           |
-  | - Distillation    |             | - LDA/NMF Topics |
-  | - NLI Coherence   |             | - Pattern Mining |
-  | - Belief Graph    |             | - Entropy Probe  |
-  | - Narrative TCAV  |             | - Dark Data      |
-  +-------------------+             +------------------+
-           |                               |
-           +---------------+---------------+
-                           |
-                           v
-  +----------------------------------------------+
-  |  DIMENSION 5: ORACLE (Future Projection)     |
-  |  - Bayesian Inference                        |
-  |  - Gaussian Process Forecasting              |
-  |  - Temporal KG Link Prediction               |
-  |  - Trend Analysis & Synthesis                |
-  |  - Anticipatory Schema Evolution             |
-  |  - Backtest Validation                       |
-  +----------------------------------------------+
-                           |
-                           v
-  +-------------------------------------------------+
-  |  DIMENSION 6: GATEKEEPER (Wisdom Filter)        |
-  |  - Meaning Depth Estimator                      |
-  |  - Contribution Assessor                        |
-  |  - Bias Detection & Correction                  |
-  |  - MCDM Decision Engine (TOPSIS/AHP/ELECTRE)    |
-  |  - Pluralitas Validator                         |
-  |  - Human Override Manager                       |
-  +-------------------------------------------------+
-                           |
-                           v                           
-                  +--------------------+
-                  | ETERNAL MEMORY     |
-                  | (Wisdom Store)     |
-                  | High-Value Only    |
-                  | Provenance Full    |
-                  +--------------------+
-                            |
-                            v
-                     [WISDOM OUTPUT]
+  RAW DATA SOURCES[TRAINING]
+  ========================================= 
+  [External APIs] [Sensors][Databases] [Web] 
+        |            |          |         |  
+        +------------+----------+---------+  
+                     |                        
+                     v                      
+  +----------------------------------------------+ 
+  |  STAGE 1: INGESTION GATEWAY                  |
+  |  - Data Orchestrator                         | 
+  |  - API Gateway                               | 
+  |  - Privacy & Security Filters                | 
+  |  - Rate Limiting                             | 
+  |  - Stream Handling                           | 
+  +----------------------------------------------+ 
+                     |                             
+                     v                            
+  +----------------------------------------------+ 
+  |  STAGE 2: INDEXING & STORAGE                 | 
+  |  - Vector Search                             |
+  |  - Temporal Tagging                          | 
+  |  - Schema Management                         | 
+  |  - Persistent Storage                        | 
+  +----------------------------------------------+ 
+                     |                             
+                     v[TRAINING]
+          +----------+----------+                  
+          |                     |                  
+          v                     v                  
+  +-------------------+ +------------------+       
+  | STAGE 3:          | | STAGE 4:         |       
+  | TRANSFORMATION    | | ANALYSIS         |     
+  | - Data Mapping    | | - Topic Modeling |       
+  | - Coherence Check | | - Pattern Mining |       
+  | - Graph Building  | | - Anomaly Detect |       
+  +-------------------+ +------------------+
+          |                     |                  
+          +----------+----------+                  
+                     |                             
+                     v                             
+  +----------------------------------------------+ 
+  |  STAGE 5: FORECASTING MODULE                 | 
+  |  - Statistical Inference                     | 
+  |  - Trend Analysis                            | 
+  |  - Predictive Modeling                       | 
+  |  - Validation                                | 
+  +----------------------------------------------+ 
+                     |                             
+                     v                             
+  +-------------------------------------------------+ 
+  |  STAGE 6: DECISION & FILTERING                  | 
+  |  - Quality Assessment                           | 
+  |  - Bias Detection                               |
+  |  - Multi-Criteria Decision Logic                | 
+  |  - Manual Override Hooks                        | 
+  +-------------------------------------------------+ 
+                     |                               
+                     v                              
+            +--------------------+                    
+            | FINAL STORAGE      |                   
+            | Validated Data     |                    
+            | Audit Trails       |                   
+            +--------------------+                    
+                     |                               
+                     v
+              [SYSTEM OUTPUT]                         
 
 ## 🧠 The 6 Dimensions of Wisdom (Operational Logic)
 
