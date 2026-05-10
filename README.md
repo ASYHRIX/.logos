@@ -116,35 +116,35 @@ project_root/
 
 ## 🧠 The 6 Dimensions of Wisdom (Operational Logic)
 
-1.  **Dimension 1: The World Brain (Global Data Orchestrator)** 
-    *   **Function:** Integrates global knowledge streams via Federated Access (Web, API, IoT, Satellites).
-    *   **Mechanisms:** Employs a Semantic API Gateway, Policy-First Routing (fail-closed protocols), and active Privacy Gates (DLP/PII Redaction).
-    *   **Goal:** Abstracts heterogeneous sources into a single, stable semantic interface.
+Stage 1: Data Ingestion & Integration
+Function: Collects and integrates data from various external sources.
+Mechanisms: Employs standard API gateways, routing protocols, and basic data masking/redaction techniques for privacy.
+Goal: Standardize heterogeneous incoming data into a uniform format.
 
-2.  **Dimension 2: The Akasha (Eternal Indexing Engine)** 
-    *   **Function:** Continuous, resilient indexing of global data.
-    *   **Mechanisms:** Utilizes a Self-Evolving Vector DB (HNSW/IVF-PQ) capable of automatic schema migration as world ontologies change.
-    *   **Goal:** Applies Bitemporal Tagging (event time vs. ingestion time) to maintain perfect historical accuracy and track epistemic drift.
+Stage 2: Indexing & Storage Engine
+Function: Stores and indexes processed data for retrieval.
+Mechanisms: Utilizes standard vector database indexing and timestamp tracking to manage data versions.
+Goal: Maintain accurate historical records and track data changes over time.
 
-3.  **Dimension 3: The Alchemist (Meaning Abstraction Core)** 
-    *   **Function:** Transmutes raw data into actionable meaning (Concept Nodes and Narratives).
-    *   **Mechanisms:** Executes Concept Distillation (TCAV) and Narrative Synthesis backed by Causal Graph Validators and Natural Language Inference (NLI) coherence checks.
-    *   **Goal:** Populates the Belief Graph while enforcing a strict "No Single-Story Policy".
+Stage 3: Data Transformation & Abstraction
+Function: Converts raw data into structured, usable formats.
+Mechanisms: Uses standard feature extraction, relationship mapping, and text validation checks.
+Goal: Build a structured relationship graph while ensuring data consistency.
 
-4.  **Dimension 4: The Shadow Seer (Dark Data Illuminator)**
-    *   **Function:** Uncovers latency and forgotten knowledge.
-    *   **Mechanisms:** Deploys Latent Pattern Mining and Entropy-Based Curiosity Probes to surface long-tail archives and disconnected motifs.
-    *   **Goal:** Identifies high-information-gain data while passing through strict ethical and privacy prechecks.
+Stage 4: Pattern Discovery
+Function: Finds hidden correlations and less obvious data points.
+Mechanisms: Deploys standard data mining and anomaly detection techniques.
+Goal: Identify useful information that might be missed by standard queries.
 
-5.  **Dimension 5: The Oracle (Future Knowledge Projection)** 
-    *   **Function:** Anticipates the trajectory of knowledge evolution.
-    *   **Mechanisms:** Employs Temporal Knowledge Graph forecasting and Bayesian inference.
-    *   **Goal:** Generates Anticipatory Schema Evolutions—preparing "empty slots" in the internal ontology for upcoming human discoveries.
+Stage 5: Predictive Modeling
+Function: Forecasts future data trends based on historical inputs.
+Mechanisms: Employs standard statistical inference and time-series forecasting models.
+Goal: Prepare the database structure for anticipated future data types.
 
-6.  **Dimension 6: The Gatekeeper (Wisdom Filter)** 
-    *   **Function:** The ultimate filter of the Eternal Memory.
-    *   **Mechanisms:** Utilizes Multi-Criteria Decision Making (MCDM) to assess Meaning Depth, Contribution to Good, and Hype/Bias correction.
-    *   **Goal:** Rejects viral or superficial data, allowing only knowledge with profound existential validity and provenance to enter the Eternal Memory.
+Stage 6: Output Filtering & Decision Logic 
+Function: Filters final outputs before storage or presentation.
+Mechanisms: Utilizes standard multi-criteria evaluation logic to assess data quality.
+Goal: Ensure only high-quality, validated data is retained in the final storage layer.
 
-## ⚙️ Technical Constraints & Engineering Standards
-This system is strictly constrained to **First Principles Thinking**, demanding Bit-Exact Implementation, Hard-Coded Constraints, and O(n) Analysis. No placeholders, stubs, or mockups are permitted. All operations require Total Functional Integrity and Zero Tolerance for Hallucinations via a Chain of Verification (CoVe). The Rust native bridge guarantees Reversible Computing logic and Efficiency for cross-process communication.
+⚙️ Technical Constraints & Engineering Standards (Generic Overview)
+This system is built with strict performance and reliability constraints. It requires optimized algorithmic complexity, hard-coded safety limits, and a compiled backend for efficient processing. All operations undergo multi-step validation checks to prevent errors and ensure data integrity. Cross-process communication is handled via standard, efficient bridging protocols.
